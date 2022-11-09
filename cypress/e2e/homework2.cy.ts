@@ -4,7 +4,7 @@ describe('Verify Billboard product count by category', () => {
       cy.login('maira.maksimova01', Cypress.env('password'));
   })
 
-  it.only('Verify product count on Billboard vs actual', () => {
+  it('Verify product count on Billboard vs actual', () => {
       const pages = ['Electronics', 'Food', 'Other', 'Real estate', 'Transport'];
       pages.forEach(page => {
 
